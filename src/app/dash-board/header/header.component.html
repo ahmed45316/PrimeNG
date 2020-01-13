@@ -1,0 +1,34 @@
+<div class="layout-news" *ngIf="newsActive">
+    <div class="layout-news-container">
+        <img src="assets/showcase/images/news/asset-1-endofyear-2019.png" alt="New Year" />
+        <span class="layout-news-details">
+            <span class="helper-text">NEW YEAR SALE</span> SAVE UP TO <span class="rate">60%</span> AT PRIMESTORE
+        </span>
+        <a href="https://www.primefaces.org/store" target="_blank" class="layout-news-button">
+            SHOP NOW<i class="pi pi-angle-right"></i>
+        </a>
+        <a href="#" class="layout-news-close" (click)="hideNews($event)">
+            <i class="pi pi-times"></i>
+        </a>
+    </div>
+</div>
+
+<div class="layout-topbar">
+    <a href="#" class="menu-button" (click)="onMenuButtonClick($event)">
+        <i class="fa fa-bars"></i>
+    </a>
+
+    <a class="logo" [routerLink]="['/']">
+        <img alt="logo" src="assets/showcase/images/logo.png" />
+    </a>
+
+    <ul class="topbar-menu">
+
+    </ul>
+</div>
+
+<side-bar></side-bar>
+
+<div class="layout-mask" *ngIf="menuActive">
+    
+</div>

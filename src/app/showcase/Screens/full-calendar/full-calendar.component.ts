@@ -18,30 +18,30 @@ export class FullCalendarComponent implements OnInit {
     this.events = [
       {
         "title": "All Day Event",
-        "start": "2016-01-01"
+        "start": "2017-01-01"
       },
       {
         "title": "Long Event",
-        "start": "2016-01-07",
-        "end": "2016-01-10"
+        "start": "2017-01-07",
+        "end": "2017-01-10"
       },
       {
         "title": "Repeating Event",
-        "start": "2016-01-09T16:00:00"
+        "start": "2017-01-09T16:00:00"
       },
       {
         "title": "Repeating Event",
-        "start": "2016-01-16T16:00:00"
+        "start": "2017-01-16T16:00:00"
       },
       {
         "title": "Conference",
-        "start": "2016-01-11",
-        "end": "2016-01-13"
+        "start": "2017-01-11",
+        "end": "2017-01-13"
       }
     ];
     this.options = {
       plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
-      defaultDate: '2017-02-01',
+      defaultDate: '2017-01-01',
       header: {
           left: 'prev,next',
           center: 'title',
