@@ -14,7 +14,7 @@
         </a>
         <div [@animation]="(inputmenutitle.id == activeMenuId) ? 'visible' : 'hidden'"
             (@animation.start)="onAnimationStart($event)" (@animation.done)="onAnimationDone($event)">
-            <a [routerLink]="['/fullcalendar']" (click)="menuActive = false">&#9679; Full Calendar</a>
+            <a [routerLink]="['/main/calendar']" (click)="menuActive = false">&#9679; Full Calendar</a>
         </div>
 
     </div>

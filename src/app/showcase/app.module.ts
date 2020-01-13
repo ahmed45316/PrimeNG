@@ -13,20 +13,15 @@ import { CountryService } from './service/countryservice';
 import { EventService } from './service/eventservice'; 
 import { NodeService } from './service/nodeservice';
 import { IconService } from './service/iconservice';
-import { FullCalendarComponent } from './Screens/full-calendar/full-calendar.component';
-import {FullCalendarModule} from 'primeng/fullcalendar'
-
 @NgModule({
   declarations: [
-    AppComponent,
-    FullCalendarComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule,
-    FullCalendarModule
+    BrowserAnimationsModule
   ],
   providers: [
       { provide: LocationStrategy, useClass: HashLocationStrategy },CountryService,EventService,NodeService,IconService

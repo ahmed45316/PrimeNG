@@ -16,10 +16,11 @@ import { CountryService } from '../showcase/service/countryservice';
 import { EventService } from '../showcase/service/eventservice';
 import { NodeService } from '../showcase/service/nodeservice';
 import { IconService } from '../showcase/service/iconservice';
+import { FullCalendarComponent } from './Screens/full-calendar/full-calendar.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, HeaderComponent, SideBarComponent, FooterComponent, LayoutComponent],
+  declarations: [HomeComponent, HeaderComponent, SideBarComponent, FooterComponent, LayoutComponent,FullCalendarComponent],
   imports: [
     CommonModule,
     DashBoardRoutingModule,
